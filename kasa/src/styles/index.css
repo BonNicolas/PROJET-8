@@ -1,5 +1,35 @@
-.main-header__logo {
-  width: 50%;
+/**** VARIABLES & MIXINS ****/
+/* colors */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 7%;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.main-header a {
+  text-decoration: none;
+  font-size: 27px;
+  color: #ff6060;
+}
+.main-header a:hover {
+  text-decoration: underline;
+}
+.main-header__home {
+  margin-right: 65px;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.main-footer__copyright {
+  color: white;
+  font-size: 25px;
 }
 
 body {
@@ -11,4 +41,28 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.main-logo--header {
+  width: 220px;
+}
+.main-logo--footer {
+  width: 130px;
+  filter: brightness(0) invert(1);
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  padding: 0% 7%;
+  margin-bottom: 45px;
+}
+.home-container__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 225px;
 }/*# sourceMappingURL=index.css.map */

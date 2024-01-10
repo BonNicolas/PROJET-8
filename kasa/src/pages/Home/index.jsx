@@ -1,7 +1,10 @@
+import image from '../../assets/home_image.jpg'
+
+
 function Home() {
     return (
-      <div>
-        <h1> Page d'accueil 🏠</h1>
+      <div className='home-container'>
+        <img className='home-container__image' src={image} alt='Home img'/>
       </div>
     )
   }
