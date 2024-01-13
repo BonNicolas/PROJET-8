@@ -1,6 +1,7 @@
 @import "./utils/variable-mixins";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./components/gallery.scss";
 
 
 
@@ -53,12 +54,25 @@ body {
     align-items: center;
     justify-content: center;
     top: 0;
-    left: 100px;
-    right: 100px;
+    left: 7%;
+    right: 7%;
     bottom: 0px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     color: $secondary-color;
     font-size: 55px;
+  }
+}
+
+.cta{
+  text-decoration: none;
+  
+  &--header{
+    font-size: 27px;
+    color: $primary-color;
+  }
+
+  &--gallery-card{
+    color: $secondary-color;
   }
 }

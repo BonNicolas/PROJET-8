@@ -1,0 +1,34 @@
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    background-color: $background-lightgrey-color;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 55px;
+    padding-bottom: 15px;
+    margin: 0 7%;
+    border-radius: 20px;
+
+    &__card{
+        position: relative;
+        width: 30%;
+        background: linear-gradient($primary-color, $tertiary-color);
+        border-radius: 20px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+ 
+}
+
+.card-content{
+
+    &__image{
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+}

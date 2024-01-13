@@ -1,7 +1,7 @@
 function About() {
   return (
     <div>
-      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+      <h1>A propos</h1>
     </div>
   )
 }
