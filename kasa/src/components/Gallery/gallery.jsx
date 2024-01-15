@@ -8,11 +8,11 @@ function Gallery() {
     <section className="gallery">
       {logements.map((logement) => {
         return (
-          <article className="gallery__card" key={logement.id}>
-            <Link className="cta cta--gallery-card" to={`/logements/${logement.id}`}>
+          <Link key={logement.id} className="cta cta--gallery-card" to={`/logements/${logement.id}`}>
+            <article className="gallery__card" key={logement.id}>
               <Card image={logement.cover} title={logement.title} />
-            </Link>
-          </article>
+            </article>
+          </Link>
         );
       })}
     </section>
