@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Card from "../../components/Cards/card";

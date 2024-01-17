@@ -5,7 +5,7 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Header from './layouts/Header/header';
 import Footer from './layouts/Footer/footer';
-import Error from './components/Error/error';
+import Error from './pages/Error/error';
 import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 

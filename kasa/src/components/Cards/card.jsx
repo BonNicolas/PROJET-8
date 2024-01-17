@@ -1,11 +1,8 @@
-import React from 'react';
-
-
-function Card({image, title}) {
+function Card(props) {
     return (
       <div className="card-content">
-        <img src={image} alt={title} className="card-content__image" />
-        <h3>{title}</h3>
+        <img src={props.image} alt={props.title} className="card-content__image" />
+        <h3>{props.title}</h3>
       </div>
     );
 }
