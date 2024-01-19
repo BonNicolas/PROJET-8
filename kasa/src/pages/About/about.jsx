@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/banner";
 import BannerAboutImage from "../../assets/banner_about_image.jpg";
 import Collapse from "../../components/Collapse/collapse";
-import collapses from "../../data/collapses.json";
+import KasaRules from "../../data/kasaRules.json";
 
 
 function About() {
@@ -9,7 +9,7 @@ function About() {
     <div>
       <Banner image={BannerAboutImage}/>
       <section className="collapse">
-        {collapses.map((collapse) => {
+        {KasaRules.map((collapse) => {
           return (
             <Collapse key={collapse.id} title={collapse.title} content={collapse.content}/>
           );

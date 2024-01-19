@@ -1,78 +1,51 @@
 @import "./utils/variable-mixins";
+@import "./pages/home";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./components/gallery.scss";
 @import "./pages/error";
+@import "./components/slideshow";
 @import "./components/collapse";
+@import "./pages/lodging";
 
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-
-.main-logo{
-
-    &--header{
-      width: 220px;
-    }
-
-    &--footer{
-      width: 130px;
-      filter: brightness(0) invert(1);
-      margin-top: 60px;
-      margin-bottom: 15px;
-    }
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.home-container{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 0% 7%;
-  margin-bottom: 45px;
-  
-  &__image{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
-    height: 225px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-logo {
+
+  &--header {
+    width: 220px;
   }
 
-  &__hover{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 7%;
-    right: 7%;
-    bottom: 0px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: $secondary-color;
-    font-size: 55px;
+  &--footer {
+    width: 130px;
+    filter: brightness(0) invert(1);
+    margin-top: 60px;
+    margin-bottom: 15px;
   }
 }
 
-.cta{
+.cta {
   text-decoration: none;
-  
-  &--header{
+
+  &--header {
     font-size: 27px;
     color: $primary-color;
   }
 
-  &--gallery-card{
+  &--gallery-card {
     color: $secondary-color;
   }
 }

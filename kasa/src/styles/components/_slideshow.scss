@@ -1,0 +1,40 @@
+.slideshow{
+    padding: 0 7%;
+    
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image{
+        object-fit: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: 420px;
+    }
+
+    &__counter{
+        position: relative;
+        bottom: 40px;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+
+    &__icon{
+        color: $secondary-color;
+
+        &--left{
+            position: absolute;
+            top: 160px;
+            left: 20px;
+        }
+
+        &--right{
+            position: absolute;
+            top: 160px;
+            right: 20px;
+        }
+    }
+}

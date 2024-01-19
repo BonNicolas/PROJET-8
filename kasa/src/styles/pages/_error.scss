@@ -1,25 +1,25 @@
-.error{
+.error {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $primary-color;
 
-    &__image{
+    &__image {
         margin-top: 90px;
         margin-bottom: 50px;
     }
 
-    &__text{
+    &__text {
         font-size: 40px;
         margin: 90px 0;
     }
 
-    & a{
+    & a {
         color: $primary-color;
         margin-top: 50px;
         margin-bottom: 140px;
     }
 
-    
+
 }

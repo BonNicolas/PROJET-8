@@ -1,4 +1,4 @@
-function Card(props) {
+function Cards(props) {
     return (
       <div className="card-content">
         <img src={props.image} alt={props.title} className="card-content__image" />
@@ -7,4 +7,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default Cards;

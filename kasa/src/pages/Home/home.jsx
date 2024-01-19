@@ -3,6 +3,7 @@ import Gallery from "../../components/Gallery/gallery";
 import BannerHomeImage from "../../assets/banner_home_image.jpg"
 
 
+
 function Home() {
     return (
       <div>
