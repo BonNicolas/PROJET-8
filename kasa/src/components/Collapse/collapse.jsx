@@ -24,7 +24,7 @@ function Collapse(props) {
           onClick={toggleCollapse}
           icon={faChevronUp}
           size="xl"
-        ></FontAwesomeIcon>
+        />
       </div>
       <div className="collapse__render-content">{renderContent()}</div>
     </div>

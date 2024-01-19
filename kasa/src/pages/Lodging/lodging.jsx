@@ -1,19 +1,21 @@
 import { useParams, Navigate } from 'react-router-dom'
-import DataFichLogement from '../../data/logements.json'
+import DataInfoLodging from '../../data/logements.json'
 import Tag from '../../components/Tag/tag'
+import Rate from '../../components/Rate/rate'
+import Host from '../../components/Host/host'
 import Collapse from '../../components/Collapse/collapse'
 import Slideshow from '../../components/Slideshow/slideshow'
 
 function Lodging() {
   const { id } = useParams()
 
-  const ficheLogement = DataFichLogement.find((logement) => logement.id === id)
+  const infoLodging = DataInfoLodging.find((lodging) => lodging.id === id)
 
-  const tags = ficheLogement?.tags.map((tag, index) => {
+  const tags = infoLodging?.tags.map((tag, index) => {
     return <Tag key={index} title={tag} />
   })
 
-  const equipements = ficheLogement?.equipments.map((equipment, index) => {
+  const equipements = infoLodging?.equipments.map((equipment, index) => {
     return (
       <ul className="collapse__list" key={index}>
         <li>{equipment}</li>
@@ -21,19 +23,27 @@ function Lodging() {
     )
   })
 
-  return ficheLogement ? (
+  return infoLodging ? (
     <div>
-      <Slideshow pictures={ficheLogement?.pictures} />
+      <Slideshow pictures={infoLodging?.pictures} />
       <section className="lodging">
-        <h1 className="lodging__title">{ficheLogement?.title}</h1>
-        <p className="lodging__subtitle">{ficheLogement?.location}</p>
-        <div>{tags}</div>
+        <div className="lodging__container">
+          <div>
+            <h1 className="lodging__title">{infoLodging?.title}</h1>
+            <p className="lodging__subtitle">{infoLodging?.location}</p>
+          </div>
+          <Host
+            name={infoLodging?.host.name}
+            picture={infoLodging?.host.picture}
+          />
+        </div>
+        <div className="lodging__tags-rate">
+          <div className="tag__container">{tags}</div>
+          <Rate score={infoLodging.rating} />
+        </div>
         <div className="lodging__collapses">
           <div className="lodging__collapse">
-            <Collapse
-              title="Description"
-              content={ficheLogement?.description}
-            />
+            <Collapse title="Description" content={infoLodging?.description} />
           </div>
           <div className="lodging__collapse">
             <Collapse title="Equipements" content={equipements} />

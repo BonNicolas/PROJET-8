@@ -116,6 +116,7 @@
 
 .slideshow {
   padding: 0 7%;
+  margin-bottom: 20px;
 }
 .slideshow__container {
   position: relative;
@@ -131,8 +132,8 @@
   height: 420px;
 }
 .slideshow__counter {
-  position: relative;
-  bottom: 40px;
+  position: absolute;
+  bottom: 15px;
   color: white;
   font-weight: bold;
 }
@@ -194,8 +195,45 @@
   margin: 0px 0px 5px 0px;
 }
 
+.rate--empty {
+  color: #e3e3e3;
+}
+.rate--full {
+  color: #ff6060;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 2px 24px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.tag__container {
+  display: flex;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+}
+.host__name {
+  margin-right: 10px;
+  color: #ff6060;
+}
+.host__picture {
+  width: 70px;
+  border-radius: 70px;
+}
+
 .lodging {
   padding: 0 7%;
+}
+.lodging__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .lodging__collapses {
   display: flex;
@@ -211,6 +249,11 @@
 .lodging__subtitle {
   margin: 0;
   color: #ff6060;
+}
+.lodging__tags-rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 body {
@@ -243,4 +286,12 @@ code {
 }
 .cta--gallery-card {
   color: white;
+}
+
+.full-star {
+  color: aqua;
+}
+
+.empty-star {
+  color: beige;
 }/*# sourceMappingURL=index.css.map */

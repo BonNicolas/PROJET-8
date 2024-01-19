@@ -1,5 +1,5 @@
 function Tag(props) {
-  return <div>{props.title}</div>
+  return <div className="tag">{props.title}</div>
 }
 
 export default Tag

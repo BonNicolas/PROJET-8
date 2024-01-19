@@ -1,6 +1,13 @@
 .lodging {
     padding: 0 7%;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
     &__collapses {
         display: flex;
         justify-content: space-between;
@@ -19,4 +26,12 @@
         margin: 0;
         color: $primary-color;
     }
+
+    &__tags-rate {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+
 }

@@ -1,0 +1,11 @@
+.rate {
+
+    &--empty {
+        color: $empty-star-color;
+    }
+
+    &--full {
+        color: $primary-color;
+
+    }
+}

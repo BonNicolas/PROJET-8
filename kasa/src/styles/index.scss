@@ -6,6 +6,9 @@
 @import "./pages/error";
 @import "./components/slideshow";
 @import "./components/collapse";
+@import "./components/rate";
+@import "./components/tag";
+@import "./components/host";
 @import "./pages/lodging";
 
 
@@ -48,4 +51,12 @@ code {
   &--gallery-card {
     color: $secondary-color;
   }
+}
+
+.full-star {
+  color: aqua;
+}
+
+.empty-star {
+  color: beige;
 }
