@@ -29,17 +29,19 @@ function Lodging() {
       <section className="lodging">
         <div className="lodging__container">
           <div>
-            <h1 className="lodging__title">{infoLodging?.title}</h1>
-            <p className="lodging__subtitle">{infoLodging?.location}</p>
+            <div>
+              <h1 className="lodging__title">{infoLodging?.title}</h1>
+              <p className="lodging__subtitle">{infoLodging?.location}</p>
+            </div>
+            <div className="tag__container">{tags}</div>
           </div>
-          <Host
-            name={infoLodging?.host.name}
-            picture={infoLodging?.host.picture}
-          />
-        </div>
-        <div className="lodging__tags-rate">
-          <div className="tag__container">{tags}</div>
-          <Rate score={infoLodging.rating} />
+          <div className="lodging__host-rate">
+            <Host
+              name={infoLodging?.host.name}
+              picture={infoLodging?.host.picture}
+            />
+            <Rate score={infoLodging.rating} />
+          </div>
         </div>
         <div className="lodging__collapses">
           <div className="lodging__collapse">

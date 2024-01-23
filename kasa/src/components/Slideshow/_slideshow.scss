@@ -1,5 +1,5 @@
 .slideshow {
-    padding: 0 7%;
+    padding: 0 6%;
     margin-bottom: 20px;
 
     &__container {
@@ -38,4 +38,41 @@
             right: 20px;
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    .slideshow {
+
+        margin-bottom: 5px;
+        margin-top: 10px;
+
+        &__image {
+            height: 255px;
+            border-radius: 10px;
+        }
+
+        &__counter {
+            display: none;
+        }
+
+        &__icon {
+
+            &--left {
+                font-size: 25px;
+                top: 110px;
+                left: 10px;
+
+            }
+
+            &--right {
+                font-size: 25px;
+                top: 110px;
+                right: 10px;
+
+            }
+        }
+
+    }
+
 }

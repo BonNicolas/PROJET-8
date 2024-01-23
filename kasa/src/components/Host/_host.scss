@@ -1,0 +1,36 @@
+.host {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__name {
+        margin-right: 10px;
+        color: $primary-color;
+        text-align: end;
+    }
+
+    &__picture {
+        width: 70px;
+        border-radius: 70px;
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (max-width: 768px) {
+
+    .host {
+        margin-bottom: 0;
+
+        &__name {
+            font-size: 14px;
+        }
+
+        &__picture {
+            width: 30px;
+
+        }
+    }
+
+
+}

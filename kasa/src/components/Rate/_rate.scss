@@ -1,0 +1,33 @@
+.rate {
+
+    &--empty {
+        margin-right: 10px;
+        color: $empty-star-color;
+    }
+
+    &--full {
+        margin-right: 10px;
+        color: $primary-color;
+
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (max-width: 768px) {
+
+    .rate {
+
+        &--empty {
+            margin-right: 5px;
+            font-size: 15px;
+        }
+
+        &--full {
+            margin-right: 5px;
+            font-size: 15px;
+
+        }
+    }
+
+}

@@ -1,5 +1,5 @@
 .gallery {
-    padding: 0 7%;
+    padding: 0 6%;
 
     &__container {
         display: grid;
@@ -25,18 +25,31 @@
 
 }
 
-.card-content {
 
-    &__image {
-        display: flex;
-        width: 100%;
-        height: 250px;
-        border-radius: 10px 10px 0px 0px;
-        object-fit: cover;
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (max-width: 768px) {
+
+    .gallery {
+
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1.5fr;
+            gap: 20px;
+            background-color: $secondary-color;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 20px;
+
+        }
+
     }
 
-    & h3 {
-        padding: 0 5%;
-    }
+
+
+
 
 }

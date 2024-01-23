@@ -1,8 +1,8 @@
-.main-header{
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 7%;
+    padding: 0% 6%;
     margin-top: 40px;
     margin-bottom: 45px;
 
@@ -10,8 +10,20 @@
         text-decoration: underline;
     }
 
-    &__home{
+    &__home {
         margin-right: 65px;
     }
+
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+    }
+
+
 
 }

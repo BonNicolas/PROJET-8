@@ -1,14 +1,17 @@
 @import "./utils/variable-mixins";
-@import "./pages/home";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./components/gallery.scss";
+@import "../components/Banner/banner";
+@import "../layouts/Header/header";
+@import "../components/Nav/nav";
+@import "../layouts/Footer/footer";
+@import "../components/Gallery/gallery";
+@import "../components/Cards/cards";
+@import "./pages/about";
 @import "./pages/error";
-@import "./components/slideshow";
-@import "./components/collapse";
-@import "./components/rate";
-@import "./components/tag";
-@import "./components/host";
+@import "../components/Slideshow/slideshow";
+@import "../components/Collapse/collapse";
+@import "../components/Rate/rate";
+@import "../components/Tag/tag";
+@import "../components/Host/host";
 @import "./pages/lodging";
 
 
@@ -53,10 +56,30 @@ code {
   }
 }
 
-.full-star {
-  color: aqua;
-}
+@media (max-width: 768px) {
 
-.empty-star {
-  color: beige;
+  body {
+    min-width: 320px;
+  }
+
+  .main-logo {
+
+    &--header {
+      width: 150px;
+    }
+
+    &--footer {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .cta {
+
+    &--header {
+      font-size: 15px;
+    }
+
+  }
+
 }
