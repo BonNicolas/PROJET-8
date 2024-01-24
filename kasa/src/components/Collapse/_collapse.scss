@@ -22,20 +22,22 @@
         color: $secondary-color;
         cursor: pointer;
         transition: transform 300ms;
-    }
 
-    &__icon.open {
-        transform: rotate(-180deg);
+        &.open {
+            transform: rotate(-180deg);
+        }
     }
 
     &__render-content {
         background-color: $background-lightgrey-color;
+
     }
 
     &__content {
         color: $primary-color;
         padding: 20px 15px 10px 15px;
         margin: 0;
+
     }
 
     &__list {

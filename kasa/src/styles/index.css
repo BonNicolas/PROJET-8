@@ -335,9 +335,11 @@
   padding: 2px 24px;
   margin-right: 10px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .tag__container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /****** Media queries ***********/
@@ -377,7 +379,7 @@
     font-size: 14px;
   }
   .host__picture {
-    width: 30px;
+    width: 40px;
   }
 }
 .lodging {
