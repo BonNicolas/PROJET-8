@@ -17,10 +17,13 @@
     .main-footer {
 
         &__copyright {
+            display: flex;
+            flex-direction: column;
             margin-top: 5px;
             margin-bottom: 50px;
             font-size: 14px;
             text-align: center;
+            white-space: pre;
 
         }
     }
