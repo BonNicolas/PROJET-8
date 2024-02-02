@@ -60,6 +60,17 @@ code {
 
   body {
     min-width: 320px;
+    height: 100vh;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .page-container {
+    flex-grow: 1;
   }
 
   .main-logo {

@@ -34,7 +34,7 @@ const KasaRules = [
 
 function About() {
   return (
-    <div>
+    <div className="page-container">
       <Banner image={BannerAboutImage} />
       <section className="collapse">
         {KasaRules.map((collapse) => {

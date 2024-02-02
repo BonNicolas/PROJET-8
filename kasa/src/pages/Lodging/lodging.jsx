@@ -24,7 +24,7 @@ function Lodging() {
   })
 
   return infoLodging ? (
-    <div>
+    <div className="page-container">
       <Slideshow pictures={infoLodging?.pictures} />
       <section className="lodging">
         <div className="lodging__container">
