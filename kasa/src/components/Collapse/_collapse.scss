@@ -5,6 +5,8 @@
     }
 
     &__bloc {
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -30,6 +32,13 @@
 
     &__render-content {
         background-color: $background-lightgrey-color;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out;
+
+        &.open {
+            max-height: 1000px;
+        }
 
     }
 

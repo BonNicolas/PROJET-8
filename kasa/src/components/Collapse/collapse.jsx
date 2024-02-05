@@ -9,12 +9,6 @@ function Collapse(props) {
     setIsOpen((isOpen) => !isOpen)
   }
 
-  const renderContent = () => {
-    return isOpen ? (
-      <div className="collapse__content">{props.content}</div>
-    ) : null
-  }
-
   return (
     <div className="collapse__container">
       <div className="collapse__bloc">
@@ -26,7 +20,9 @@ function Collapse(props) {
           size="xl"
         />
       </div>
-      <div className="collapse__render-content">{renderContent()}</div>
+      <div className={`collapse__render-content ${isOpen ? 'open' : ''}`}>
+        <div className="collapse__content">{props.content}</div>
+      </div>
     </div>
   )
 }
