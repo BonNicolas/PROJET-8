@@ -1,0 +1,54 @@
+.gallery {
+    padding: 0 6%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+        gap: 60px;
+        background-color: $background-lightgrey-color;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+
+    &__card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+}
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (max-width: 768px) {
+
+    .gallery {
+
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1.5fr;
+            gap: 20px;
+            background-color: $secondary-color;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+
+
+
+
+}
